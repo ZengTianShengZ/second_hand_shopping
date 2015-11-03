@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp" 
+    android:background="#F56122">
+    
+	<LinearLayout 
+	    android:id="@+id/zss_actionbar_leftLil"
+	    android:layout_alignParentLeft="true"
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    >
+	    <ImageView 
+	        android:id="@+id/zss_actionbar_leftImg"
+	        android:layout_width="35dp"
+	        android:layout_height="35dp"
+	        android:layout_gravity="center_vertical"
+	        android:src="@drawable/actionbar_back_img"/>
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:id="@+id/zss_actionbar_centertLil"
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    android:layout_centerInParent="true"
+	    >
+	    <TextView 
+	        android:id="@+id/zss_actionbar_Tv"
+	        android:layout_gravity="center_vertical"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="标题"
+	        android:textSize="9pt"/>
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:id="@+id/zss_actionbar_righttLil"
+	    android:layout_alignParentRight="true"
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    >
+	    <ImageView 
+	        android:id="@+id/zss_actionbar_righImg"
+	        android:layout_width="35dp"
+	        android:layout_height="35dp"
+	        android:layout_gravity="center_vertical"
+	        android:src="@drawable/actionbar_back_img"/>
+	</LinearLayout>
+</RelativeLayout>

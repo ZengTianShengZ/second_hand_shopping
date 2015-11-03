@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.dz4.ishopping"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dz4.ishop.ui.SplashActivity" >
+
+    <include layout="@layout/top" />
+
+    <FrameLayout
+        android:id="@+id/fragment_zone"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="0"
+        android:background="#fafafa"
+        android:orientation="horizontal" >
+
+        <com.dz4.ishop.view.BottomTagView
+            android:id="@+id/BottomTag_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onTagClick"
+            android:padding="8dp"
+            app:tagcolor="#ff8800"
+            app:tagicon="@drawable/icon_tag_home"
+            app:tagsize="10dp"
+            app:tagtext="home" />
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="horizontal" />
+
+        <com.dz4.ishop.view.BottomTagView
+            android:id="@+id/BottomTag_chat"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onTagClick"
+            android:padding="8dp"
+            app:tagcolor="#ff8800"
+            app:tagicon="@drawable/icon_tag_cam"
+            app:tagsize="5dp"
+            app:tagtext="chat" />
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="horizontal" />
+
+        <com.dz4.ishop.view.BottomTagView
+            android:id="@+id/BottomTag_me"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onTagClick"
+            android:padding="8dp"
+            app:tagcolor="#ff8800"
+            app:tagicon="@drawable/icon_tag_me"
+            app:tagsize="10dp"
+            app:tagtext="me" />
+    </LinearLayout>
+
+</LinearLayout>
